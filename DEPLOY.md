@@ -30,6 +30,18 @@ window.SUPABASE_CONFIG = {
 
 Netlify 很適合這個專案，因為不需要 build 指令，也不需要後端伺服器。
 
+GitHub repository：
+
+```text
+https://github.com/Dennis10181024/self-intro-profile-site
+```
+
+一鍵部署：
+
+```text
+https://app.netlify.com/start/deploy?repository=https://github.com/Dennis10181024/self-intro-profile-site
+```
+
 ### 方法 A：手動上傳
 
 1. 登入 Netlify。

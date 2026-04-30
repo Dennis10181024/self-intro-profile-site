@@ -2,6 +2,8 @@
 
 這是一個可連接 Supabase PostgreSQL 的多人自我介紹網站。每個人只要在資料庫有一筆 `profiles.username`，就能共用同一份頁面模板：
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dennis10181024/self-intro-profile-site)
+
 - `index.html?u=xuyizhan`
 - `index.html?u=chen-xiao-ming`
 
