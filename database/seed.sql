@@ -5,7 +5,7 @@ DECLARE
     p1 UUID;
     p2 UUID;
     cat UUID;
-    project_id UUID;
+    inserted_project_id UUID;
 BEGIN
     INSERT INTO public.profiles (
         username, name, title, birthday, location, bio, avatar_url, cover_url, resume_url, theme_color, is_published
@@ -80,10 +80,10 @@ BEGIN
         'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
         1
     )
-    RETURNING id INTO project_id;
+    RETURNING id INTO inserted_project_id;
 
     INSERT INTO public.project_links (project_id, label, url, sort_order)
-    VALUES (project_id, 'GitHub', 'https://github.com/yourusername/proxy', 1);
+    VALUES (inserted_project_id, 'GitHub', 'https://github.com/yourusername/proxy', 1);
 
     INSERT INTO public.projects (profile_id, title, role, tech_stack, description, image_url, sort_order)
     VALUES (
